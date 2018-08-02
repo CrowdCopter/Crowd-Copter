@@ -1,4 +1,3 @@
-
 import numpy as np
 import CoherentFilter_TrackToXV
 import CoherentFilter_Neighbor
