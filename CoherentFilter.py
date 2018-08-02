@@ -1,4 +1,4 @@
-'''Algorithm 1 of Coherent Filtering: Detecting coherent motion patterns at each frame'''
+
 import numpy as np
 import CoherentFilter_TrackToXV
 import CoherentFilter_Neighbor
