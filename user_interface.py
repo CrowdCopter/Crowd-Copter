@@ -16,8 +16,8 @@ class Window(QMainWindow):
         self.title = "Crowd Copter"
         self.top = 100
         self.left = 100
-        self.width = 680
-        self.height = 500
+        self.width = 1500
+        self.height = 900
 
 
         self.InitWindow()
@@ -30,11 +30,11 @@ class Window(QMainWindow):
 
         self.label = QLabel(self)
         self.label.setPixmap(QPixmap(cwd+"\\test.png"))
-        self.label.setGeometry(300,300,100,100)
+        self.label.setGeometry(300,0,1280,720)
 
         self.linedit = QLineEdit(self)
         self.linedit.move(50,100)
-        self.linedit.resize(280,40)
+        self.linedit.resize(100,40)
 
         self.button = QPushButton("Select", self)
         self.button.move(50,150)
