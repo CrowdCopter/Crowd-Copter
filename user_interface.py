@@ -5,6 +5,7 @@ from PyQt5.QtWidgets import QApplication, QMainWindow, QLabel, QWidget, QMessage
 import sys
 from PyQt5.QtGui import QPixmap
 import os
+import Run
 
 cwd = os.getcwd()
 
@@ -58,7 +59,7 @@ class Window(QMainWindow):
         QMessageBox.question(self, "Line Edit", "You Have Choose " + textValue,QMessageBox.Ok, QMessageBox.Ok)
 
     def OpenClick(self):
-        alg.FunctionAlgo()
+        Run.USRE()
 
     def OClick (self):
         self.label.setPixmap(QPixmap(cwd+"\\icoooo.png"))
