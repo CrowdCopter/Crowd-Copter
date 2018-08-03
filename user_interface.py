@@ -4,6 +4,9 @@ import alg
 from PyQt5.QtWidgets import QApplication, QMainWindow, QLabel, QWidget, QMessageBox, QPushButton, QLineEdit
 import sys
 from PyQt5.QtGui import QPixmap
+import os
+
+cwd = os.getcwd()
 
 
 class Window(QMainWindow):
@@ -21,12 +24,12 @@ class Window(QMainWindow):
 
 
     def InitWindow(self):
-        self.setWindowIcon(QtGui.QIcon("C:\\Users\\janadi\\Anaconda3\\Lib\\site-packages\\icon.ico"))
+        self.setWindowIcon(QtGui.QIcon(cwd+"\\icon.ico"))
         self.label1 = QLabel("Select Sector", self)
         self.label1.move(50,50)
 
         self.label = QLabel(self)
-        self.label.setPixmap(QPixmap("C:\\Users\\janadi\\Anaconda3\\Lib\\site-packages\\test.png"))
+        self.label.setPixmap(QPixmap(cwd+"\\test.png"))
         self.label.setGeometry(300,300,100,100)
 
         self.linedit = QLineEdit(self)
@@ -58,7 +61,7 @@ class Window(QMainWindow):
         alg.FunctionAlgo()
 
     def OClick (self):
-        self.label.setPixmap(QPixmap("C:\\Users\\janadi\\Anaconda3\\Lib\\site-packages\\icoooo.png"))
+        self.label.setPixmap(QPixmap(cwd+"\\icoooo.png"))
         
 
 
