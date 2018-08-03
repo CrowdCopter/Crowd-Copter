@@ -29,7 +29,7 @@ class Window(QMainWindow):
         self.label1.move(50,50)
 
         self.label = QLabel(self)
-        self.label.setPixmap(QPixmap(cwd+"\\test.png"))
+        self.label.setPixmap(QPixmap(cwd+"\\frame70.jpg"))
         self.label.setGeometry(300,0,1280,720)
 
         self.linedit = QLineEdit(self)
