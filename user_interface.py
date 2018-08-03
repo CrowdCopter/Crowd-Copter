@@ -61,7 +61,7 @@ class Window(QMainWindow):
         Run.USER()
 
     def OClick (self):
-        self.label.setPixmap(QPixmap(cwd+"\\icoooo.png"))
+        self.label.setPixmap(QPixmap(cwd+"\\result.jng"))
         
 
 
