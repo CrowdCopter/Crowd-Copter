@@ -61,3 +61,6 @@ def USER():
     cv2.imshow(result,img)
     k = cv2.waitKey(0)
     return result
+
+
+USER()
